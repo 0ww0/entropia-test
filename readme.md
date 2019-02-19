@@ -22,7 +22,7 @@ When serve.
 Devicon Fonts Repo (http://konpa.github.io/devicon/)
 
 Gulp JS Import Issues
-- Not properly passing directory at @import argument between Unix/Linux and Windows.
+- Not properly passing directory at `@import` argument between Unix/Linux and Windows.
 - Workaround
     - Unix/Linux : `./{FolderName}/{FileName}.js`
     - Windows: `src\assets\{FolderName}\{FolderName}\{FileName}.js`
