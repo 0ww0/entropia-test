@@ -27,6 +27,10 @@ Gulp JS Import Issues
     - Unix/Linux : `./{FolderName}/{FileName}.js`
     - Windows: `src\assets\{FolderName}\{FolderName}\{FileName}.js`
 
+Automate Zip for backup using Datetime Stamp Format.
+- Backup every time start using gulp.
+- Use `gulp prod` zip build for production.
+
 The Gulp Nodes to be intalled
 
 ```{nodejs}

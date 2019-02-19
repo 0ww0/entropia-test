@@ -25,6 +25,7 @@ import jsimport      from 'gulp-js-import';
 import zip           from 'gulp-zip';
 
 const portDest = '8080',
+    now = new Date(),
     server = browserSync.create(),
     paths = {
         build: 'build/',
@@ -145,15 +146,15 @@ export const fonts = () => gulp.src( paths.fonts.src )
      .pipe(gulp.dest( paths.fonts.dest ))
 
 export const zipsource = () => gulp.src( paths.zip.src )
-    .pipe(zip('src-' + Date.now() +'.zip' ))
+    .pipe(zip( now.toDateString() + ' ' + now.toLocaleTimeString() + '/' + 'src.zip' ))
     .pipe(gulp.dest( paths.zip.destOld ))
 
 export const zipbuild = () => gulp.src( paths.zip.build )
-    .pipe(zip('build-' + Date.now() +'.zip' ))
+    .pipe(zip(now.toDateString() + ' ' + now.toLocaleTimeString() + '/' + 'build.zip' ))
     .pipe(gulp.dest( paths.zip.destOld ))
 
 export const zipprod = () => gulp.src( paths.zip.build )
-    .pipe(zip('build-prod-' + Date.now() +'.zip' ))
+    .pipe(zip(now.toDateString() + ' ' + now.toLocaleTimeString() + '/' + 'build-prod.zip' ))
     .pipe(gulp.dest( paths.zip.destProd ))
 
 export const devwatch = () => {
