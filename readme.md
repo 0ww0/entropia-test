@@ -16,22 +16,27 @@ Server Configuration is at `localhost:8080`!
 The port `:8080` will auto changes if detected other Gulp / NodeJS instances.
 
 When serve.
+
 - The file/folder will delete the folder first and create a new one.
 - The jQuery been combine using gulp task on scriptComps task - gulp-js-import
+
 
 Devicon Fonts Repo (http://konpa.github.io/devicon/)
 
 Gulp JS Import Issues
+
 - Not properly passing directory at `@import` argument between Unix/Linux and Windows.
 - Workaround
     - Unix/Linux : `./{FolderName}/{FileName}.js`
     - Windows: `src\assets\{FolderName}\{FolderName}\{FileName}.js`
 
 Automate Zip for backup using Datetime Stamp Format.
+
 - Backup every time start using gulp.
 - Use `gulp prod` zip build for production.
 
 The Gulp Nodes to be intalled
+
 
 ```{nodejs}
 npm i gulp --save-dev === https://www.npmjs.com/package/gulp
@@ -56,6 +61,7 @@ npm i gulp-size --save-dev === https://www.npmjs.com/package/gulp-size
 npm i gulp-babel --save-dev === https://www.npmjs.com/package/gulp-babel
 ```
 
+
 ```{BabelJS}
 npm i @babel/core --save-dev === https://www.npmjs.com/package/@babel/core
 npm i @babel/polyfill --save-dev === https://www.npmjs.com/package/@babel/polyfill
@@ -66,11 +72,13 @@ npm i babel-loader --save-dev === https://www.npmjs.com/package/babel-loader
 
 Express Install All Gulp Nodes
 
+
 ```
 npm i gulp gulp-cli del gulp-sass gulp-autoprefixer gulp-cssnano gulp-rename gulp-pug gulp-prettify browser-sync gulp-newer gulp-imagemin gulp-concat gulp-plumber gulp-notify gulp-uglify gulp-purgecss gulp-js-import gulp-zip gulp-babel --save-dev
 ```
 
 Express Install All BabelJS Nodes
+
 
 ```
 npm i @babel/core @babel/polyfill @babel/preset-env @babel/register babel-loader --save-dev
