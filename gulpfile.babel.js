@@ -54,7 +54,7 @@ const portDest = '8080',
             dest: 'build/'
         },
         fonts: {
-            src: 'src/assets/fonts/**/*.+(eot|ttf|svg|woff)',
+            src: 'src/assets/fonts/**/*.+(eot|ttf|woff)',
             dest: 'build/assets/fonts/'
         },
         zip: {
