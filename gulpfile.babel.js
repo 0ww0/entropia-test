@@ -60,7 +60,7 @@ const portDest = '8080',
         zip: {
             src: 'src/**/*',
             build: 'build/**/*',
-            destOld: 'zip/old',
+            destOld: 'zip/past',
             destProd: 'zip/prod'
         },
 };
@@ -130,7 +130,7 @@ export const scripts = () => gulp.src([ paths.scripts.src, paths.scripts.exSrc ]
     .pipe(gulp.dest( paths.scripts.dest ))
 
 export const scriptComps = () => gulp.src(paths.scripts.srcMain)
-    .pipe(jsimport({ hideConsole: false }))
+    .pipe(jsimport({ hideConsole: false, allowEmpty: true }))
     .pipe(concat( 'main.js' ))
     .pipe(gulp.dest( paths.scripts.dest ))
     .pipe(uglify())
