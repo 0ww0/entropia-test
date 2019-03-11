@@ -18,9 +18,9 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/mazkt/entropia-test#readme",
   "devDependencies": {
-    "@babel/core": "^7.3.3",
+    "@babel/core": "^7.3.4",
     "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.5",
     "browser-sync": "^2.26.3",
@@ -41,7 +41,8 @@
     "gulp-purgecss": "^1.1.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1",
-    "gulp-zip": "^4.2.0"
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^4.2.0",
+    "webpack": "^4.29.6"
   }
 }
