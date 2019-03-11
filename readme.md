@@ -8,7 +8,7 @@
 Make sure you have NodeJS installed (currently built using v4^).
 
 1. Clone the repo.
-2. `cd` into the folder and do a fresh `npm install`.
+2. `cd` into the folder and do a fresh `npm i`.
 3. Run `gulp serve` to start the server
 
 Server Configuration is at `localhost:8080`!
@@ -81,5 +81,5 @@ Express Install All BabelJS Nodes
 
 
 ```
-npm i @babel/core @babel/polyfill @babel/preset-env @babel/register babel-loader --save-dev
+npm i @babel/core @babel/polyfill @babel/preset-env @babel/register babel-loader webpack --save-dev
 ```
