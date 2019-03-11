@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='description', content)
+        meta(name='author', content)
+        meta(http-equiv='X-UA-Compatible' content='IE-edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        block config
+           include config
+        include components/_favicon
+        
+        title #{title} | Entropia Test
+        
+        link(rel='stylesheet', href = rootBase + 'assets/styles/bootstrap.min.css')
+        link(rel='stylesheet', href = rootBase + 'assets/styles/overide.min.css')
+        block stylesheet
+
+    body
+        include globals/_header
+        main
+            block content
+        include globals/_footer
+        
+        script(src= rootBase + 'assets/scripts/external/jquery.min.js')
+        script(src= rootBase + 'assets/scripts/external/popper.min.js')
+        script(src= rootBase + 'assets/scripts/external/bootstrap.min.js')
+        block javascript
