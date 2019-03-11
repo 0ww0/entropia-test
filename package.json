@@ -16,7 +16,7 @@
   ],
   "author": "Mazkt Rake",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mazkt/gulp-babel#readme",
+  "homepage": "https://bitbucket.org/mazkt/entropia-test#readme",
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/polyfill": "^7.2.5",
