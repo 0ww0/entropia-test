@@ -1,14 +1,14 @@
 {
-  "name": "gulp-babel-es6",
+  "name": "entropia",
   "version": "1.0.0",
-  "description": "Gulp 4 using Babel",
+  "description": "Entropia Technical Test",
   "main": "gulpfile.babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mazkt@bitbucket.org/mazkt/gulp-babel.git"
+    "url": "git+https://mazkt@bitbucket.org/mazkt/entropia-test.git"
   },
   "keywords": [
     "gulpsjs",
