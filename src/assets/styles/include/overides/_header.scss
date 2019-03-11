@@ -1,0 +1,27 @@
+header{
+    position: relative;
+    display: block;
+    background-color: #0002;
+    .fe-logo{
+        width: 16.63%;
+        min-width: 160px;
+        padding: 5px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .fe-nav{
+        width: 100%;
+        .fe-navbar{
+            list-style: none;
+            display: block;
+            padding: 10px;
+            li{
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+    }
+}
