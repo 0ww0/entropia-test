@@ -36,7 +36,7 @@ const portDest = '8080',
         scripts: {
             src: 'src/assets/scripts/**/*.js',
             srcMain: 'src/assets/scripts/main.js',
-            exSrc: '!src/assets/scripts/components/*.js',
+            exSrc: '!src/assets/scripts/component/*.js',
             dest: 'build/assets/scripts/',
         },
         templates: {
@@ -161,7 +161,7 @@ export const devwatch = () => {
     gulp.watch( paths.styles.src, gulp.series(styles, reload) );
     gulp.watch( paths.templates.src, gulp.series(templates, reload) );
     gulp.watch( paths.images.src, gulp.series(images, reload) );
-    gulp.watch( paths.scripts.src, gulp.series(scripts, reload) );
+    gulp.watch( paths.scripts.src, gulp.series(scripts, scriptComps, reload) );
     gulp.watch( paths.favicons.src, gulp.series(favicons, reload) );
     gulp.watch( paths.fonts.src, gulp.series(fonts, reload) );
 };
@@ -180,7 +180,7 @@ exports.zipbuild    = zipbuild;
 exports.zipprod     = zipprod;
 exports.devwatch    = devwatch;
 
-const build = gulp.series( zipsource, zipbuild, clean, templates, styles, scripts, favicons, fonts, images, gulp.parallel( browser, devwatch ));
+const build = gulp.series( zipsource, zipbuild, clean, templates, styles, scripts, scriptComps, favicons, fonts, images, gulp.parallel( browser, devwatch ));
 
 export const prod = gulp.series(zipprod);
 

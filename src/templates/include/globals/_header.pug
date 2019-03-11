@@ -1,25 +1,26 @@
-header.navbar.navbar-expand-lg
-    .container-fluid
-        .row
-            .col-2
-                .fe-logo
-                    img(src = imgPath + 'logo.png')
-            .col-10
-                .fe-nav
-                    ul.fe-navbar
-                        li
-                            a(href=rootBase + '#')
-                                span About Us
-                        li
-                            a(href=rootBase + '#')
-                                span Blog
-                        li
-                            a(href=rootBase + '#')
-                                span Collection
-                        li
-                            a(href=rootBase + '#')
-                                span Latest News
-                        li
-                            a(href=rootBase + '#')
-                                span Faq
-                .fe-toolbox
+header.fixed-top(data-scroll)
+    nav.navbar.navbar-dark.navbar-expand-md.bg-faded.justify-content-center
+        .navbar-brand.d-flex.w-50.mr-auto
+            a.fe-logo(href='/')
+                img(src= imgPath + 'logo.png')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsingNavbar3')
+            span.navbar-toggler-icon
+        #collapsingNavbar3.navbar-collapse.collapse.w-100
+            ul.navbar-nav.w-100.justify-content-center.fe-navi
+                li.nav-item.active
+                    a.nav-link(href='#') About Us
+                li.nav-item
+                    a.nav-link(href='#') Blog
+                li.nav-item
+                    a.nav-link(href='#') Collections
+                li.nav-item
+                    a.nav-link(href='#') Latest News
+                li.nav-item
+                    a.nav-link(href='#') Faq
+            ul.nav.navbar-nav.ml-auto.w-100.justify-content-end.fe-toolbox
+                li.nav-item
+                    a.nav-link(href='#') P
+                li.nav-item
+                    span.nav-link |
+                li.nav-item
+                    a.nav-link(href='#') Log In

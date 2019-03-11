@@ -1,0 +1,12 @@
+.carousel{
+    width: 100%;
+    .carousel-item{
+        height: 100vh;
+        > *:first-child{
+            height: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
