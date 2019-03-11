@@ -146,15 +146,15 @@ export const fonts = () => gulp.src( paths.fonts.src )
      .pipe(gulp.dest( paths.fonts.dest ))
 
 export const zipsource = () => gulp.src( paths.zip.src )
-    .pipe(zip( now.toDateString() + ' ' + now.toLocaleTimeString().replace(/:/g,'.') + '/' + 'src.zip' ))
+    .pipe(zip( now.toDateString() + ' ' + now.toLocaleTimeString().replace(/:/g,'_') + '/' + 'src.zip' ))
     .pipe(gulp.dest( paths.zip.destOld ))
 
 export const zipbuild = () => gulp.src( paths.zip.build )
-    .pipe(zip(now.toDateString() + ' ' + now.toLocaleTimeString().replace(/:/g,'.') + '/' + 'build.zip' ))
+    .pipe(zip(now.toDateString() + ' ' + now.toLocaleTimeString().replace(/:/g,'_') + '/' + 'build.zip' ))
     .pipe(gulp.dest( paths.zip.destOld ))
 
 export const zipprod = () => gulp.src( paths.zip.build )
-    .pipe(zip(now.toDateString() + ' ' + now.toLocaleTimeString().replace(/:/g,'.') + '/' + 'build-prod.zip' ))
+    .pipe(zip(now.toDateString() + ' ' + now.toLocaleTimeString().replace(/:/g,'_') + '/' + 'build-prod.zip' ))
     .pipe(gulp.dest( paths.zip.destProd ))
 
 export const devwatch = () => {
