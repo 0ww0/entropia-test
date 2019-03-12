@@ -1,0 +1,39 @@
+.heading-deco{
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-top: 80px;
+    &.text-light{
+        &:before{
+            background-color: #fff;
+        }
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 5px;
+        background-color: #000;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.heading-title{
+    font-size: 38px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+.fe-wrapper{
+    position: relative;
+    display: block;
+}
