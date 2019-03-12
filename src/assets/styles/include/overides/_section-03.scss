@@ -57,4 +57,35 @@
         left: 25%;
         right: 25%;
     }
+    .blog-text{
+        padding: 10px;
+    }
+    .blog-title{
+        font-size: 25px;
+        height: 114px;
+        overflow: hidden;
+        line-height: 1.5;
+        color: #fff;
+        padding: 20px 10px;
+        font-weight: bold;
+    }
+    .blog-desc{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #fff;
+        padding: 0 10px;
+    }
+    .blog-link{
+        position: absolute;
+        bottom: 25px;
+        font-size: 14px;
+        color: #fff;
+        margin: auto;
+        padding: 8px;
+        left: 25%;
+        right: 25%;
+        span{
+            margin-right: 10px;
+        }
+    }
 }
