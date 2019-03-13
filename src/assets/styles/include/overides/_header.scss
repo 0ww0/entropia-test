@@ -27,6 +27,11 @@ header[data-scroll]{
         visibility: hidden;
     }
     .fe-navi{
+        .active,:active,:hover{
+            .nav-link{
+                color: #fff;
+            }
+        }
         .nav-link{
             color: #fff;
         }
