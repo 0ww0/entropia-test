@@ -26,6 +26,7 @@
             text-transform: uppercase;
             border-bottom-left-radius: .25rem;
             border-bottom-right-radius: .25rem;
+            cursor: pointer;
             &.active{
                 background-color: #000;
                 color: #fff;
