@@ -75,6 +75,15 @@
             color: #fff;
             padding: 0 10px;
         }
+        .blog-image{
+            padding: 10px 0;
+            width: 75px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
         .blog-link{
             position: absolute;
             bottom: 25px;

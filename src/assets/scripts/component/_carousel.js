@@ -4,7 +4,7 @@
 		var $this = $(this);
 
 		$this.prepend([
-			'<div style="background-image: url(', $this.attr('data-bg-src'), ')"></div>'
+			'<div class="fe-item-image" style="background-image: url(', $this.attr('data-bg-src'), ')"></div>'
 		].join(''));
 	});
 

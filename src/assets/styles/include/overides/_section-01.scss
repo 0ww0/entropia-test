@@ -1,3 +1,57 @@
 .fe-section-01{
-    
+    .carousel-inner{
+        background-color: #000;
+    }
+    .carousel-item{
+        position: relative;
+    }
+    .fe-item-image{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: center no-repeat;
+        background-size: cover;
+    }
+    .fe-item-holder{
+        position: relative;
+        padding: 0 20px;
+        .item-banner{
+            width: 85%;
+            height: 100vh;
+            margin: 0 auto;
+            td{
+                vertical-align: middle;
+            }
+        }
+        .item-banner-holder{
+            position: relative;
+            .banner-image{
+                width: 100%;
+                margin: 0 auto 20px;
+                max-width: 240px;
+                img{
+                    width: 100%;
+                }
+            }
+            .banner-desc{
+                font-size: 18px;
+                line-height: 1.5;
+                color: #fff8;
+                padding-bottom: 20px;
+            }
+            .banner-button{
+                width: 100%;
+                max-width: 180px;
+                margin: 20px auto;
+                .fe-button{
+                    width: 100%;
+                    padding: 15px 40px;
+                    background-color: #fdb834c4;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
