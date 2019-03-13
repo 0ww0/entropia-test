@@ -62,8 +62,13 @@ header[data-scroll='scroll']{
         }
     }
     .fe-toolbox{
+        .active,:active,:hover{
+            .nav-link{
+                color: #000;
+            }
+        }
         .nav-link{
-            color: #000;
+            color: #656565;
         }
     }
 }
