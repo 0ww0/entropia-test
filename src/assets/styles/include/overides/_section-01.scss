@@ -43,13 +43,37 @@
                 max-width: 180px;
                 margin: 20px auto;
                 .fe-button{
+                    position: relative;
                     width: 100%;
                     padding: 15px 40px;
                     background-color: #fdb834c4;
                     color: #fff;
                     text-decoration: none;
+                    .fe-deco{
+                        color: #fff8;
+                        position: absolute;
+                        &:nth-child(1){
+                            top: -8px;
+                            left: -5px;
+                        }
+                        &:nth-child(2){
+                            top: -8px;
+                            right: -5px;
+                        }
+                        &:nth-child(3){
+                            bottom: -8px;
+                            left: -5px;
+                        }
+                        &:nth-child(4){
+                            bottom: -8px;
+                            right: -5px;
+                        }
+                    }
                     &:hover{
                         background-color: #fdb834;
+                        .fe-deco{
+                            color: #fff;
+                        }
                     }
                 }
             }

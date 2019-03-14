@@ -21,6 +21,9 @@
         border-bottom: 1px #000 solid;
         padding-bottom: 15px;
         margin-bottom: 15px;
+        &.text-black-50{
+            border-bottom: 1px #0005 solid;
+        }
         &:last-child{
             margin-bottom: 0;
         }
