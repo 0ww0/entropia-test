@@ -14,6 +14,19 @@ header{
         text-transform: uppercase;
         text-align: center;
     }
+    .fe-toolbox{
+        text-align: center;
+        .nav-item{
+            @media(min-width: 768px){
+                border-right: 1px #fff solid;
+                padding-right: 10px;
+                &:last-child{
+                    padding-right: 0;
+                    border-right: 0;
+                }
+            }
+        }
+    }
 }
 
 header[data-scroll]{
@@ -67,6 +80,16 @@ header[data-scroll='scroll']{
         }
     }
     .fe-toolbox{
+        .nav-item{
+            @media(min-width: 768px){
+                border-right: 1px #656565 solid;
+                padding-right: 10px;
+                &:last-child{
+                    padding-right: 0;
+                    border-right: 0;
+                }
+            }
+        }
         .active,:active,:hover{
             .nav-link{
                 color: #000;
