@@ -11,6 +11,11 @@
         .nav-item{
             width: 100%;
             text-align: center;
+            cursor: pointer;
+            &.active{
+                cursor: default;
+                pointer-events: none;
+            }
             @media(min-width: 768px){
                 width: 33.33%;
             }
@@ -26,7 +31,10 @@
             text-transform: uppercase;
             border-bottom-left-radius: .25rem;
             border-bottom-right-radius: .25rem;
-            cursor: pointer;
+            &:hover{
+                background-color: #0009;
+                color: #fff9;
+            }
             &.active{
                 background-color: #000;
                 color: #fff;

@@ -4,12 +4,12 @@
     span Curabitur Nisl Lorem
 .fe-about-tabs.tabs-wrapper.py-5
     ul#myTab.nav.nav-tabs(role='tablist')
+        li.nav-item.active
+            #tab1-tab.nav-link.active(data-toggle='tab', data-target='#tab1', data-indicator='#tab1-1', role='tab', aria-controls='tab1', aria-selected='true') Sollicitudin
         li.nav-item
-            #tab1-tab.nav-link.active(data-toggle='tab', data-target='#tab1', role='tab', aria-controls='tab1', aria-selected='true') Sollicitudin
+            #tab2-tab.nav-link(data-toggle='tab', data-target='#tab2', data-indicator='#tab2-1', role='tab', aria-controls='tab2', aria-selected='false') Eu Viverra
         li.nav-item
-            #tab2-tab.nav-link(data-toggle='tab', data-target='#tab2', role='tab', aria-controls='tab2', aria-selected='false') Eu Viverra
-        li.nav-item
-            #tab3-tab.nav-link(data-toggle='tab', data-target='#tab3', role='tab', aria-controls='tab3', aria-selected='false') Venetis Varius
+            #tab3-tab.nav-link(data-toggle='tab', data-target='#tab3', data-indicator='#tab3-1', role='tab', aria-controls='tab3', aria-selected='false') Venetis Varius
     #myTabContent.tab-content.py-4
         #tab1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='tab1-tab')
             .fe-wrapper
@@ -89,3 +89,10 @@
                                         span Duis imperdiet dui non porttitor congue dignissim lacus nisi. 
                 .tabs-desc.text-center.py-3
                     span Gravida condimentum odio, molestie posuere neque lacinia non. Phasellus efficitur dignissim orci, eget lacinia enim aliquam nec. Mauris fringilla cursus elementum. Integer pretium justo quis augue lobortis semper.
+    ul#myTabIndicator.nav-tabs-indicator
+        li.nav-item-indicator
+            #tab1-1.nav-link-indicator.active
+        li.nav-item-indicator
+            #tab2-1.nav-link-indicator
+        li.nav-item-indicator
+            #tab3-1.nav-link-indicator

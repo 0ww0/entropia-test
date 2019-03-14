@@ -93,6 +93,11 @@
             padding: 8px;
             left: 25%;
             right: 25%;
+            text-decoration: none;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
             span{
                 margin-right: 10px;
             }

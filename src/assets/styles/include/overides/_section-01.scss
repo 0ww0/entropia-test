@@ -47,6 +47,10 @@
                     padding: 15px 40px;
                     background-color: #fdb834c4;
                     color: #fff;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: #fdb834;
+                    }
                 }
             }
         }

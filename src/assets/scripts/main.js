@@ -3,9 +3,10 @@
     var $win = $(win);
     var $doc = $(doc);
 
-    @import 'src/assets/scripts/component/_header.js'
-    @import 'src/assets/scripts/component/_carousel.js'
-    @import 'src/assets/scripts/component/_copyright.js'
-    @import 'src/assets/scripts/component/_scroll.js'
+    @import 'component/_header.js'
+    @import 'component/_carousel.js'
+    @import 'component/_copyright.js'
+    @import 'component/_scroll.js'
+    @import 'component/_tab-indicator.js'
 
 })(window, document);
